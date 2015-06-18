@@ -5,7 +5,9 @@ The firmware turns a common wireless router into a mesh networking device.
 It connects to similar routers in the area and builds a Wifi-mesh network.
 For the Mini Firmware 4mb flash and 16mb memory required.
 
-Note: The Mini Firmware extends only the Wifi-mesh network. There is no web interface, no client access point function and no connection to the internet over the wan interface. 
+Note: The Mini Firmware extends only the Wifi-mesh network.
+There is no web interface, no client access point function and
+no connection to the Internet over the WAN interface.
 
 To build the firmware you need a Unix console to enter commands into.
 Install dependencies for the build environment (Debian/Ubuntu):
@@ -51,13 +53,15 @@ images are for further updates.
 * Use `openwrt-[chip]-[model]-squashfs-factory.bin` for the initial flash.
 * Use `openwrt-[chip]-[model]-squashfs-sysupgrade.bin` for futher updates.
 
-Note: After the firmware upload wait about 10 minutes. The router reboots multible times and the firmware configuration takes a long time.
+Note: After the firmware upload wait about 10 minutes.
+The startup may take a long time if it is a slow device.
 
-The router configuration can be done in the file /etc/config/freifunk. Insert or change the following options:
+The router configuration can be done in the file /etc/config/freifunk.
+Insert or change the following options:
 
     option name 'Name of the router'
-    option contact 'Your eMail Adresse'
-    option geo 'Enter your cordinated her'
+    option contact 'Your eMail Address'
+    option geo 'Enter your GPS coordinates here'
 
 Many routers have not been tested yet, but may work.
 Give it a try! :-)
